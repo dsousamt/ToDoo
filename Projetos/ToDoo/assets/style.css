@@ -1,0 +1,24 @@
+.container {
+}
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  padding: 16px;
+  background: lightblue;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.taskItem:hover {
+  background: lightcyan;
+  transition: 150ms;
+}
+
+.taskItem button {
+  align-self: flex-end;
+}
+
+.doneTask {
+  text-decoration: line-through;
+}
