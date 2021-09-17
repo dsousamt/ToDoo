@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  .container {
+  }
+   .taskItem {
+      display: flex;
+      justify-content: space-between;
+      margin: 4px 0;
+      padding: 16px;
+      background: lightblue;
+      text-align: left;
+      border-radius: 8px;
+    }
+
+    .taskItem:hover {
+      background: lightcyan;
+      transition: 150ms;
+    }
+
+    .taskItem button {
+      align-self: flex-end;
+    }
+
+    .doneTask {
+      text-decoration: line-through;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <h1>To do List</h1>
+    <form>
+      <input type="text" name="" id="taskItem">
+      <button>Adicionar</button>
+    </form>
+    
+    <div class="tasksContent"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
