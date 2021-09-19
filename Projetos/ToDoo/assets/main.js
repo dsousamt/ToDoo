@@ -40,9 +40,9 @@ for (let index = 0; index < arrTasks.length; index++) {
 
   tasksFront.innerHTML = tasksFront.innerHTML +
   `<div class="taskItem" >
-    <input id="isChecked${index}" type='checkbox'${arrTasks[index].isChecked == true ? 'checked' : '' }>
+    <input class="checkbox" id="isChecked${index}" type='checkbox'${arrTasks[index].isChecked == true ? 'checked' : '' }>
     <p>${arrTasks[index].task}</p>
-    <button id="deleteTask${index}">Remover</button>
+    <button id="deleteTask${index}">Excluir</button>
   </div>`;
 
   const btn = document.querySelector(`#isChecked${index}`);
